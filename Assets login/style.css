@@ -1,0 +1,96 @@
+/*importa fontes do google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*reseta todas as configurações padrões*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+
+/*Muda o fundo*/
+.body {
+    background-image: url("annie-spratt-Ki0-ea-Hgx4-unsplash.jpg");
+}
+
+/*modificação do conteúdo principal (main)*/
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 5%;
+}
+
+/*modificação do conteúdo do login*/
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    background-color: #9491e236;
+    backdrop-filter: blur(7px);
+    border-radius: 20px;
+    /*Sombra*/
+    -webkit-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
+    -moz-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
+    box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
+}
+
+/*Modificação do título pelo ID*/
+#titulo-login {
+    text-align: center;
+    font-family: "Lora", serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 50px;
+    padding-bottom: 5%;
+    padding-top: 5%;
+}
+
+/*Muda a label de usuario, senha e checkbox*/
+.usuario-label, .senha-label, .checkbox-label {
+    width: 65%;
+    margin: 2%;
+    font-weight: normal;
+    font-family: 'Sarala', sans-serif;
+    color: #FFF2E7;
+}
+
+/*Modifica as caixas de input de usuario e senha*/
+.usuario-input, .senha-input {
+    border: none;
+    border-radius: 20px;
+    width: 65%;
+    margin: 5px;
+    padding: 1.5%;
+}
+
+/*Muda a caixa de checkbox*/
+.checkbox-input {
+    width: 15px;
+    height: 15px;
+    margin-right: 6px;
+  }
+
+.esquece-senha {
+    font-weight: normal;
+    font-family: 'Sarala', sans-serif;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #0000ff
+  }
+
+.botao {
+    padding: 4px;
+    width: 25%;
+    margin: auto;
+    font-size: medium;
+    border-radius: 20px;
+    border: none;
+    background-color: #FFF2E7;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+  }

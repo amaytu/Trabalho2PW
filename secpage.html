@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Assets pag. principal/StyleHomePage.css">
+    <script src="Assets pag. principal/script.js"></script>
+    <link rel="shortcut icon" href="Assets login/supermarketbasket_89193.png" type="image/x-icon">
+    <title>TO DO LIST</title>
+</head>
+<body>
+
+    <!-- Header-->
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></li>
+                <li><a href="#mercado">MERCADO</a></li>
+                <li><a href="#faculdade">FACULDADE</a></li>
+                <li><a href="#geral">GERAL</a></li>
+            </ul>
+            <ul>
+                <li><a href="#" onclick="reloadPage()">TO DO LIST</a></li>
+                <li class="hideOnMobile"><a href="#mercado">MERCADO</a></li>
+                <li class="hideOnMobile"><a href="#faculdade">FACULDADE</a></li>
+                <li class="hideOnMobile"><a href="#geral">GERAL</a></li>
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+            </ul>
+
+        <aside>
+            <img src="Assets pag. principal/profile_pic.png" alt="User photo">
+            <p>Usuário</p>
+        </aside>
+    </nav>
+</header>
+<!-- Header-->
+
+    <!-- Conteudo-->
+    
+    <div class="container">
+    <h1 id="mercado">Mercado</h1>
+        <input type="text" id="taskInputMercado" placeholder="Add new task">
+        <button onclick="addTask('m')">Add Task</button>
+        <ul id="taskListMercado">
+        </ul>
+    </div>
+    <div class="container">
+        <h1 id="faculdade">Faculdade</h1>
+        <input type="text" id="taskInputFaculdade" placeholder="Add new task">
+        <button onclick="addTask('f')">Add Task</button>
+        <ul id="taskListFaculdade">
+        </ul>
+    </div>
+    <div class="container">
+        <h1 id="geral">Geral</h1>
+        <input type="text" id="taskInputGeral" placeholder="Add new task">
+        <button onclick="addTask('g')">Add Task</button>
+        <ul id="taskListGeral">
+        </ul>
+    </div>
+
+    <!-- Conteudo-->
+
+    <!-- Footer-->
+    <footer>
+        <div class="boxs">
+            <h2>Universidade</h2>
+            <ui>
+                <li><a href="#">FURB</a></li>
+            </ui>
+        </div>
+
+        <div class="boxs">
+            <h2>Disciplina</h2>
+            <ui>
+                <li><a href="#">Programação Web</a></li>
+                <li><a href="#">Ciências da computação</a></li>
+                <li><a href="#">Terceiro Semestre</a></li>
+            </ui>
+        </div>
+        <div class="boxs">
+            <h2>Alunos</h2>
+            <ui>
+                <li><a href="#">Gabriel Utyama</a></li>
+                <li><a href="#">Julia Welter</a></li>
+                <li><a href="#">Yuri Gralha</a></li>
+            </ui>
+
+            </div>
+        </footer>
+    </body>
+</html>
