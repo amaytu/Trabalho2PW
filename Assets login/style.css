@@ -13,7 +13,7 @@
 
 /*Muda o fundo*/
 .body {
-    background-color: #0000ff;
+    background-image: url("john-fowler-RsRTIofe0HE-unsplash\ \(1\).jpg");
 }
 
 /*modificação do conteúdo principal (main)*/
@@ -32,7 +32,7 @@
     align-items: center;
     width: 400px;
     height: 490px;
-    background-color: #9491e292;
+    background-color: #8886b790;
     backdrop-filter: blur(7px);
     border-radius: 20px;
     /*Sombra*/
@@ -108,8 +108,8 @@
     font-size: medium;
     border-radius: 20px;
     border: none;
-    background-color: #ff9500;
-    color: rgb(255, 255, 255);
+    background-color: hsl(202, 72%, 37%);
+    color: rgb(0, 0, 0);
     cursor: pointer;
   }
 
