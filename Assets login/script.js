@@ -7,11 +7,11 @@ document.addEventListener("DOMContentLoaded", function() {
     form.addEventListener("submit", function(event) {
         event.preventDefault();
 
-        var emailInput = emailInput.value.trim();
+        var emailValue = emailInput.value.trim();
         var usuarioValue = usuarioInput.value.trim();
         var senhaValue = senhaInput.value.trim();
 
-        if (!validateEmail(emailInput)) {
+        if (!validateEmail(emailValue)) { 
             alert("Por favor, insira um email válido.");
             return;
         }
@@ -39,14 +39,12 @@ document.addEventListener("DOMContentLoaded", function() {
     radioButtons.forEach((radioButton) => {
         radioButton.addEventListener('click', () => {
             if (radioButton.checked) {
-            radioButtons.forEach((otherRadioButton) => {
-                if (otherRadioButton!= radioButton) {
-                otherRadioButton.checked = false;
-                }
-            });
+                radioButtons.forEach((otherRadioButton) => {
+                    if (otherRadioButton != radioButton) {
+                        otherRadioButton.checked = false;
+                    }
+                });
             }
         });
     });
 });
-
-
