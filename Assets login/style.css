@@ -1,5 +1,7 @@
 /*importa fontes do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
 /*reseta todas as configurações padrões*/
 * {
@@ -11,7 +13,7 @@
 
 /*Muda o fundo*/
 .body {
-    background-image: url("annie-spratt-Ki0-ea-Hgx4-unsplash.jpg");
+    background-color: #0000ff;
 }
 
 /*modificação do conteúdo principal (main)*/
@@ -30,7 +32,7 @@
     align-items: center;
     width: 400px;
     height: 400px;
-    background-color: #9491e236;
+    background-color: #9491e292;
     backdrop-filter: blur(7px);
     border-radius: 20px;
     /*Sombra*/
@@ -42,21 +44,32 @@
 /*Modificação do título pelo ID*/
 #titulo-login {
     text-align: center;
-    font-family: "Lora", serif;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-style: italic;
     color: #FFF2E7;
-    font-weight: 400;
-    font-size: 50px;
+    font-size: 40px;
     padding-bottom: 5%;
     padding-top: 5%;
 }
 
 /*Muda a label de usuario, senha e checkbox*/
-.usuario-label, .senha-label, .checkbox-label {
+.usuario-label, .senha-label, .checkbox-label, .password-label, .pais-label {
     width: 65%;
-    margin: 2%;
-    font-weight: normal;
-    font-family: 'Sarala', sans-serif;
+    margin: 0.5%;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
     color: #FFF2E7;
+}
+
+.pais-input {
+    display: flex;    
+    border: none;
+    border-radius: 20px;
+    width: 30%;
+    margin: 5px;
+    padding: 1.5%;
 }
 
 /*Modifica as caixas de input de usuario e senha*/
@@ -75,12 +88,9 @@
     margin-right: 6px;
   }
 
-.esquece-senha {
-    font-weight: normal;
-    font-family: 'Sarala', sans-serif;
+#senha {
     text-decoration: underline;
     cursor: pointer;
-    color: #0000ff
   }
 
 .botao {
@@ -90,7 +100,8 @@
     font-size: medium;
     border-radius: 20px;
     border: none;
-    background-color: #FFF2E7;
-    color: rgb(0, 0, 0);
+    background-color: #ff9500;
+    color: rgb(255, 255, 255);
     cursor: pointer;
   }
+
