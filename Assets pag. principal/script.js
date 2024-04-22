@@ -1,13 +1,4 @@
-function showSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'flex'
-  }
-  function hideSidebar(){
-    const sidebar = document.querySelector('.sidebar')
-    sidebar.style.display = 'none'
-  }
-  
-  function addTask(identificador) {
+function addTask(identificador) {
     var taskInput = {};
     var taskList = {};
 
@@ -47,14 +38,21 @@ function showSidebar(){
     var editButton = document.createElement("button");
     editButton.innerHTML = "Edit";
     editButton.onclick = function() {
-        var newText = prompt("Enter new text for the task:", li.textContent.trim());
+        var newText = prompt( li.textContent.trim());
         if (newText !== null && newText !== "") {
             li.firstChild.textContent = newText;
         }
     };
     li.appendChild(editButton);
+
 }
 
-function reloadPage() {
-  location.reload();
+function limparTarefas() {
+    // Limpa todas as tarefas
+    var taskLists = document.querySelectorAll("ul");
+    taskLists.forEach(function(taskList) {
+        taskList.innerHTML = "";
+    });
+
 }
+
