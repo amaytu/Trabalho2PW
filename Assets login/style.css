@@ -31,7 +31,7 @@
     flex-direction: column;
     align-items: center;
     width: 400px;
-    height: 400px;
+    height: 490px;
     background-color: #9491e292;
     backdrop-filter: blur(7px);
     border-radius: 20px;
@@ -55,7 +55,7 @@
 
 /*Muda a label de usuario, senha e checkbox*/
 .usuario-label, .senha-label, .checkbox-label, 
-.password-label, .pais-label, .radio-label {
+.password-label, .pais-label, .radio-label, .email-label {
     width: 65%;
     margin: 0.5%;
     font-family: "Roboto", sans-serif;
@@ -81,7 +81,7 @@
 }
 
 /*Modifica as caixas de input de usuario e senha*/
-.usuario-input, .senha-input {
+.usuario-input, .senha-input, .email-input {
     border: none;
     border-radius: 20px;
     width: 65%;
