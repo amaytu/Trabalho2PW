@@ -32,7 +32,7 @@
     align-items: center;
     width: 400px;
     height: 490px;
-    background-color: #8886b790;
+    background-color: #daa59d4c;
     backdrop-filter: blur(7px);
     border-radius: 20px;
     /*Sombra*/
@@ -108,7 +108,7 @@
     font-size: medium;
     border-radius: 20px;
     border: none;
-    background-color: hsl(202, 72%, 37%);
+    background-color: #c1c6c0;
     color: rgb(0, 0, 0);
     cursor: pointer;
   }
