@@ -85,15 +85,26 @@ function salvarTasks(identificador) {
         taskList = document.getElementById("taskListGeral"); 
     } else if (identificador == 'f') { 
         taskList = document.getElementById("taskListFaculdade"); 
-    } else { 
+    } else if (identificador == 'm') { 
         taskList = document.getElementById("taskListMercado"); 
+    } else {
+        console.error("Identificador inválido:", identificador);
+        return;
     }
 
-    var currentTask = taskList.firstChild; // Começa com o primeiro filho
+    console.log("Lista de tarefas:", taskList);
 
-    while (currentTask) {
-        localStorage.setItem(currentTask.id, currentTask.innerText);
-        currentTask = currentTask.nextSibling; // Avança para o próximo filho
+    if (!taskList) {
+        console.error("Elemento da lista não encontrado para identificador:", identificador);
+        return;
+    }
+
+    var taskItems = taskList.children;
+
+    for (var i = 0; i < taskItems.length; i++) {
+        var task = taskItems[i];
+        console.log("Salvando tarefa:", task.id, "-", task.innerText);
+        localStorage.setItem(task.id, task.innerText);
     }
 }
 
@@ -102,5 +113,6 @@ function salvarTodasTasks() {
     salvarTasks('f'); 
     salvarTasks('m'); 
 }
+
 
 
