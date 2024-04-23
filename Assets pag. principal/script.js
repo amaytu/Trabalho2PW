@@ -92,19 +92,13 @@ function salvarTasks(identificador) {
         return;
     }
 
-    console.log("Lista de tarefas:", taskList);
-
-    if (!taskList) {
-        console.error("Elemento da lista não encontrado para identificador:", identificador);
-        return;
-    }
-
     var taskItems = taskList.children;
 
     for (var i = 0; i < taskItems.length; i++) {
         var task = taskItems[i];
         console.log("Salvando tarefa:", task.id, "-", task.innerText);
-        localStorage.setItem(task.id, task.innerText);
+        let variavel = uuidv4();
+        localStorage.setItem(variavel, task.innerText);
     }
 }
 
@@ -115,4 +109,9 @@ function salvarTodasTasks() {
 }
 
 
-
+function uuidv4() {
+    return "10000000-1000-4000-8000-100000000000".replace(/[018]/g, c =>
+      (+c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> +c / 4).toString(16)
+    );
+  }
+  
