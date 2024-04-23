@@ -78,3 +78,29 @@ function limparTodasTasks() {
     limparTasks('m');
 }
 
+function salvarTasks(identificador) { 
+    var taskList = {};
+
+    if (identificador == 'g') { 
+        taskList = document.getElementById("taskListGeral"); 
+    } else if (identificador == 'f') { 
+        taskList = document.getElementById("taskListFaculdade"); 
+    } else { 
+        taskList = document.getElementById("taskListMercado"); 
+    }
+
+    var currentTask = taskList.firstChild; // Começa com o primeiro filho
+
+    while (currentTask) {
+        localStorage.setItem(currentTask.id, currentTask.innerText);
+        currentTask = currentTask.nextSibling; // Avança para o próximo filho
+    }
+}
+
+function salvarTodasTasks() { 
+    salvarTasks('g'); 
+    salvarTasks('f'); 
+    salvarTasks('m'); 
+}
+
+
