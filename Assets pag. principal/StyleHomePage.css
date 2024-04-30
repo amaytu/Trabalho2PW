@@ -5,19 +5,31 @@
   box-sizing: border-box;
 }
 
-/* Nav bar */
+/* Header */
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+ 
+}
+
 li button {
   padding: 11px 20px;
   background-color: #daa59d;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 25px; 
   cursor: pointer;
   transition: background-color 0.3s;
   margin: 5px 10px;
 }
 
-li button:hover {
+li button:hover,
+li button.active { 
   background-color: #c1908d;
 }
 
@@ -51,6 +63,7 @@ nav a {
 
 nav a:hover {
   background-color: #f0f0f0;
+  border-radius: 25px; /* Adicionado para manter as bordas arredondadas ao passar o mouse */
 }
 
 .sidebar {
@@ -97,6 +110,10 @@ nav a:hover {
       width: 100%;
   }
 }
+/* Header */
+
+
+
 
 /* Usuario */
 aside {
