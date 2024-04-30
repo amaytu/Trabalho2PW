@@ -1,9 +1,7 @@
-/*importa fontes do google fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
 
-/*reseta todas as configurações padrões*/
 * {
     margin: 0;
     padding: 0;
@@ -11,12 +9,10 @@
     text-decoration: none;
   }
 
-/*Muda o fundo*/
 .body {
     background-image: url("john-fowler-RsRTIofe0HE-unsplash\ \(1\).jpg");
 }
 
-/*modificação do conteúdo principal (main)*/
 .main {
     display: flex;
     flex-direction: row;
@@ -25,7 +21,6 @@
     padding: 5%;
 }
 
-/*modificação do conteúdo do login*/
 .login {
     display: flex;
     flex-direction: column;
@@ -35,13 +30,12 @@
     background-color: #daa59d4c;
     backdrop-filter: blur(7px);
     border-radius: 20px;
-    /*Sombra*/
+    /Sombra/
     -webkit-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
     -moz-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
     box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
 }
 
-/*Modificação do título pelo ID*/
 #titulo-login {
     text-align: center;
     font-family: "Roboto", sans-serif;
@@ -53,7 +47,6 @@
     padding-top: 5%;
 }
 
-/*Muda a label de usuario, senha e checkbox*/
 .usuario-label, .senha-label, .checkbox-label, 
 .password-label, .pais-label, .radio-label, .email-label {
     width: 65%;
@@ -80,7 +73,6 @@
     padding: 1.5%;
 }
 
-/*Modifica as caixas de input de usuario e senha*/
 .usuario-input, .senha-input, .email-input {
     border: none;
     border-radius: 20px;
@@ -89,7 +81,6 @@
     padding: 1.5%;
 }
 
-/*Muda a caixa de checkbox*/
 .checkbox-input {
     width: 15px;
     height: 15px;
@@ -112,4 +103,3 @@
     color: rgb(0, 0, 0);
     cursor: pointer;
   }
-
