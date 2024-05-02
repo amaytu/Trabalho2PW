@@ -190,20 +190,11 @@ body {
 }
 
 #hom, #mul, #out {
+    margin: 5px;
+    font-size: 1rem;
     display: inline-block;
     margin-right: 10px;
     transition: 0.3s;
 }
 
-#hom:checked ~ .radioLabel,
-#mul:checked ~ .radioLabel,
-#out:checked ~ .radioLabel {
-    color: #daa59d4c;
-}
-
-#hom:checked ~ #hom,
-#mul:checked ~ #mul,
-#out:checked ~ #out {
-    background-color: #daa59d4c;
-}
 
