@@ -1,3 +1,14 @@
+function validateUsername() {
+    const username = document.getElementById('username').value;
+    const errorText = document.getElementById('error-text');
+  
+    if (username.length < 6) {
+      errorText.textContent = 'At least 6 characters required';
+    } else {
+      errorText.textContent = '';
+    }
+  }
+
 document.addEventListener("DOMContentLoaded", function() {
     var form = document.getElementById("login");
     var emailInput = document.getElementById("email");

@@ -8,43 +8,47 @@
     <link rel="shortcut icon" href="Assets login/wild_west_sun_desert_cactus_icon_226290.png" type="image/x-icon">
     <title>ToDo List</title>
 </head>
-<body class="body">
-    <main id="main" class="main">
-        <form id="login" class="login" action="secpage.html" method="GET">
-            <h1 id="titulo-login">Login</h1>
-
-            <label class="email-label" for="email">E-mail</label>
-            <input class="email-input" id="email" type="email" name="email" required>
-
-            <label class="usuario-label" for="usuario">Usuário</label>
-            <input class="usuario-input" id="usuario" type="text" name="usuario" required>
-
-            <label class="senha-label" for="senha">Senha</label>
-            <input class="senha-input" id="senha" type="password" name="senha" required>
-
-            <label class="pais-label" for="pais">Selecione seu país de origem</label>
-            <select class="pais-input" id="pais" required>
+<body>
+    <div class="box">
+        <h2 class="loginTitle" id="loginTitle">Login</h2>
+        <p></p>
+        <form>
+        <div class="inputBox">
+            <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+            <label>E-mail</label>
+        </div>
+        <div class="inputBox">
+            <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+            <label>Usuário</label>
+        </div>
+        <div class="inputBox">
+            <input type="text" name="text" required="" onkeyup="this.setAttribute('value', this.value);" value="">
+            <label>Senha</label>
+        </div>
+        <div class="inputBox">
+            <select class="paisInput" id="pais" required>
                 <option class="pais-label2" value="">País</option>
                 <option class="pais-label2" value="Angola">Angola</option>
                 <option class="pais-label2" value="Brasil">Brasil</option>
                 <option class="pais-label2" value="Canada">Canada</option>
                 <option class="pais-label2" value="Dinamarca">Dinamarca</option>
             </select>
-
-            <label class="radio-label">Qual seu gênero</label>
+        </div>
+        <p></p>
+        <div class="gender-container">
+            <label class="radioLabel">Qual seu gênero</label>
             <div class="radio">
                 <input type="radio" name="genero" value="homem"><label for="hom" id="hom">homem</label> 
                 <input type="radio" name="genero" value="mulher"><label for="mul" id="mul">mulher</label> 
                 <input type="radio" name="genero" value="outro"><label for="out" id="out">outro</label> 
             </div>
-
-            <label class="checkbox-label" for="checkbox">
-            <input class="checkbox-input" id="checkbox" type="checkbox">Lembre-me</label>
-
-            <a class="password-label" id="senha" href="#">Esqueci a Senha</a>
-
-            <button class="botao" type="submit">Entrar</button>
+        </div>
+        <p></p>
+        <div class="forgot">
+            <button type="button">Esqueceu a senha?</button>
+        </div>
+          <input type="submit" name="sign-in" value="Entrar">
         </form>
-    </main>
+      </div>
 </body>
 </html>
