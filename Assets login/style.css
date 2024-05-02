@@ -182,6 +182,7 @@ body {
 }
 
 .radioLabel {
+    margin-top: 40px;
     display: inline-block;
     margin-right: 10px;
     color: grey;
