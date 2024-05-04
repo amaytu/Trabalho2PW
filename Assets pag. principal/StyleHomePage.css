@@ -6,15 +6,15 @@
 }
 
 /* Header */
-
 header {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000; 
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
- 
+  top: 20px; 
+  left: 20px; 
+  right: 20px; 
+  width: calc(100% - 40px); 
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 30px; 
 }
 
 li button {
@@ -24,13 +24,9 @@ li button {
   border: none;
   border-radius: 25px; 
   cursor: pointer;
-  transition: background-color 0.3s;
   margin: 5px 10px;
-}
-
-li button:hover,
-li button.active { 
-  background-color: #c1908d;
+  margin-bottom: 30px;
+  border-radius: 30px; 
 }
 
 nav {
@@ -39,6 +35,7 @@ nav {
   justify-content: space-between;
   display: flex;
   align-items: center;
+  border-radius: 30px
 }
 
 nav ul {
@@ -46,10 +43,12 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
+  justify-content: center; 
 }
 
 nav li {
   height: 50px;
+  margin: 0 10px; 
 }
 
 nav a {
@@ -63,7 +62,7 @@ nav a {
 
 nav a:hover {
   background-color: #f0f0f0;
-  border-radius: 25px; /* Adicionado para manter as bordas arredondadas ao passar o mouse */
+  border-radius: 25px; 
 }
 
 .sidebar {
@@ -73,8 +72,6 @@ nav a:hover {
   height: 100vh;
   width: 250px;
   background-color: #daa59d4c;
-  backdrop-filter: blur(12px);
-  box-shadow: 10px 0 10px rgba(0, 0, 0, 0.1);
   list-style: none;
   display: none;
   flex-direction: column;
@@ -112,9 +109,6 @@ nav a:hover {
 }
 /* Header */
 
-
-
-
 /* Usuario */
 aside {
   display: flex;
@@ -134,6 +128,7 @@ aside img {
 aside p {
   font-weight: bold;
 }
+/* Usuario */
 
 /* Conteudo */
 .content {
@@ -152,11 +147,12 @@ body {
 
 .container {
   max-width: 600px;
-  margin: 50px auto;
+  margin: auto;
+  margin-top: 90px; 
+  margin-bottom: 90px; 
   padding: 20px;
   background-color: #f4f4f4;
-  border-radius: 5px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 25px;
 }
 
 h1 {
@@ -207,6 +203,7 @@ button:hover {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+/* Conteudo */
 
 /* Footer */
 footer {
