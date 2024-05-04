@@ -54,7 +54,7 @@ body {
   
   .box .inputBox input {
     width: 93%;
-    padding: 0.625rem 10px;
+    padding: 0.625rem;
     font-size: 1rem;
     letter-spacing: 0.062rem;
     margin-bottom: 1.875rem;
@@ -78,7 +78,7 @@ body {
   .box .inputBox input:focus ~ label,
   .box .inputBox input:valid ~ label,
   .box .inputBox input:not([value=""]) ~ label {
-    top: -1.125rem;
+
     left: 10px;
     color: #daa59d4c;
     font-size: 0.75rem;
@@ -197,4 +197,11 @@ body {
     transition: 0.3s;
 }
 
+.mensagem-erro {
+    color: red;
+    font-size: 0.75em;
+    display: block;
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
 
