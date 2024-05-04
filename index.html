@@ -14,20 +14,23 @@
         <p></p>
         <form>
         <div class="inputBox">
-            <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="">
-            <label>E-mail</label>
+            <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="" oninput="verificarCaracteresEmail(this)">
+            <label>E-mail *</label>
+            <small id="mensagemErroEmail" class="mensagem-erro"></small>
         </div>
         <div class="inputBox">
-            <input type="email" name="email" required="" onkeyup="this.setAttribute('value', this.value);" value="">
-            <label>Usuário</label>
+            <input type="text" name="user" required="" onkeyup="this.setAttribute('value', this.value);" value="" oninput="verificarCaracteresUser(this)">
+            <label>Usuário *</label>
+            <small id="mensagemErroUser" class="mensagem-erro"></small>
         </div>
         <div class="inputBox">
-            <input type="text" name="text" required="" onkeyup="this.setAttribute('value', this.value);" value="">
-            <label>Senha</label>
+            <input type="password" name="password" required="" onkeyup="this.setAttribute('value', this.value);" value="" oninput="verificarCaracteresPassword(this)">
+            <label>Senha *</label>
+            <small id="mensagemErroPassword" class="mensagem-erro"></small>
         </div>
         <div class="inputBox">
             <select class="paisInput" id="pais" required>
-                <option class="pais-label2" value="">País</option>
+                <option class="pais-label2" value="">País *</option>
                 <option class="pais-label2" value="Angola">Angola</option>
                 <option class="pais-label2" value="Brasil">Brasil</option>
                 <option class="pais-label2" value="Canada">Canada</option>
@@ -36,7 +39,7 @@
         </div>
         <p></p>
         <div class="gender-container">
-            <label class="radioLabel">Qual seu gênero</label>
+            <label class="radioLabel">Qual seu gênero *</label>
             <div class="radio">
                 <input type="radio" name="genero" value="homem"><label for="hom" id="hom">homem</label> 
                 <input type="radio" name="genero" value="mulher"><label for="mul" id="mul">mulher</label> 

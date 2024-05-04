@@ -1,200 +1,225 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-  }
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
 
 body {
-    margin: 0;
-    padding: 0;
-    background-size: cover;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-  }
+  margin: 0;
+  padding: 0;
+  background-size: cover;
+  font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+}
 
-  .box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 25rem;
-    padding: 2.5rem;
-    box-sizing: border-box;
-    border: 1px solid #daa59d4c;
-    -webkit-border-radius: 8px;
-    border-radius: 20px;
-    -webkit-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
-    -moz-box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
-    box-shadow: -1px 25px 47px 20px rgba(0,0,0,0.21);
-  }
+.box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 25rem;
+  padding: 2.5rem;
+  box-sizing: border-box;
+  border: 1px solid #daa59d4c;
+  -webkit-border-radius: 8px;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 25px 47px 20px rgba(0, 0, 0, 0.21);
+  -moz-box-shadow: -1px 25px 47px 20px rgba(0, 0, 0, 0.21);
+  box-shadow: -1px 25px 47px 20px rgba(0, 0, 0, 0.21);
+}
 
-  .box h2 {
-    margin: 0px 0 -0.125rem;
-    padding: 0;
-    color: #fff;
-    text-align: center;
-    color: #202124;
-    font-family: 'Google Sans','Noto Sans Myanmar UI',arial,sans-serif;
-    font-size: 24px;
-    font-weight: 400;
-  }
+.box h2 {
+  margin: 0px 0 -0.125rem;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  color: #202124;
+  font-family: 'Google Sans', 'Noto Sans Myanmar UI', arial, sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+}
 
-  .box p {
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: .1px;
-    line-height: 1.5;
-    margin-bottom: 25px;
-    text-align: center;
-  }
-  
-  .box .inputBox {
-    position: relative;
-  }
-  
-  .box .inputBox input {
-    width: 93%;
-    padding: 0.625rem 10px;
-    font-size: 1rem;
-    letter-spacing: 0.062rem;
-    margin-bottom: 1.875rem;
-    border: 1px solid #ccc;
-    background: transparent;
-    border-radius: 4px;
-    
-  }
-  
-  .box .inputBox label {
-    position: absolute;
-    top: 0;
-    left: 10px;
-    padding: 0.625rem 0;
-    font-size: 1rem;
-    color: grey;
-    pointer-events: none;
-    transition: 0.3s;
-  }
-  
-  .box .inputBox input:focus ~ label,
-  .box .inputBox input:valid ~ label,
-  .box .inputBox input:not([value=""]) ~ label {
-    top: -1.125rem;
-    left: 10px;
-    color: #daa59d4c;
-    font-size: 0.75rem;
-    background-color: white;
-    height: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
-  }
-  .box .inputBox input:focus {
-    outline: none;
-    border: 2px solid #daa59d4c;
-  }
-  .box input[type="submit"] {
-    border: none;
-    outline: none;
-    color: #fff;
-    background-color: #daa59d4c;
-    padding: 0.625rem 1.25rem;
-    cursor: pointer;
-    border-radius: 0.312rem;
-    font-size: 1rem;
-    float: right;
-  }
-  
-  .box input[type="submit"]:hover {
-    background-color: #daa59d4c;
-    box-shadow: 0 1px 1px 0 #daa59d4c, 0 1px 3px 1px #daa59d4c;
-  }            
+.box p {
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: .1px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.box .inputBox {
+  position: relative;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.box .inputBox input {
+  width: 93%;
+  padding: 0.625rem;
+  font-size: 1rem;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+
+}
+
+.box .inputBox label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  padding: 0.625rem 0;
+  font-size: 1rem;
+  color: grey;
+  pointer-events: none;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  transition: 0.3s;
+}
+
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label,
+.box .inputBox input:not([value=""])~label {
+
+  left: 10px;
+  color: #daa59d4c;
+  font-size: 0.75rem;
+  background-color: white;
+  height: 10px;
+  padding-left: 5px;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
+
+.box .inputBox input:focus {
+  outline: none;
+  border: 2px solid #daa59d4c;
+  margin-bottom: 0px;
+  padding-bottom: 10px;
+}
+
+.box input[type="submit"] {
+  border: none;
+  outline: none;
+  color: #fff;
+  background-color: #daa59d4c;
+  padding: 0.625rem 1.25rem;
+  cursor: pointer;
+  border-radius: 0.312rem;
+  font-size: 1rem;
+  float: right;
+}
+
+.box input[type="submit"]:hover {
+  background-color: #daa59d4c;
+  box-shadow: 0 1px 1px 0 #daa59d4c, 0 1px 3px 1px #daa59d4c;
+}
 
 
-  .box .inputBox input:focus ~ label,
-  .box .inputBox input:valid ~ label,
-  .box .inputBox input:not([value=""]) ~ label {
-      top: -1.125rem;
-      left: 10px;
-      color: #daa59d4c;
-      font-size: 0.75rem;
-      background-color: white;
-      height: 10px;
-      padding-left: 5px;
-      padding-right: 5px;
-  }
-  .box .inputBox input:focus {
-      outline: none;
-      border: 2px solid #daa59d4c;
-  }
+.box .inputBox input:focus~label,
+.box .inputBox input:valid~label,
+.box .inputBox input:not([value=""])~label {
+  top: -1.125rem;
+  left: 10px;
+  color: #daa59d4c;
+  font-size: 0.75rem;
+  background-color: white;
+  height: 10px;
+  padding-left: 5px;
+    margin-bottom: 0px;
+  padding-bottom: 10px;
+  padding-right: 5px;
+}
 
-  .forgot {
-    margin-top: -20px;
-  }
+.box .inputBox input:focus {
+  outline: none;
+  border: 2px solid #daa59d4c;
+}
 
-  .forgot button {
-    -webkit-border-radius: 4px;
-    border-radius: 4px;color: #1a73e8;
-    display: inline-block;
-    font-weight: 500;
-    letter-spacing: .25px;
-    outline: 0;
-    position: relative;
-    background-color: transparent;
-    cursor: pointer;
-    font-size: inherit;
-    padding: 0;
-    text-align: left;
-    border: 0;
-  }
+.forgot {
+  margin-top: -20px;
+}
+
+.forgot button {
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  color: #1a73e8;
+  display: inline-block;
+  font-weight: 500;
+  letter-spacing: .25px;
+  outline: 0;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  font-size: inherit;
+  padding: 0;
+  text-align: left;
+  border: 0;
+}
 
 .paisInput {
-    position: absolute;
-    top: 0;
-    font-size: 1rem;
-    color: grey;
-    transition: 0.3s;
-    width: 40%;
-    padding: 0.625rem 10px;
-    font-size: 1rem;
-    letter-spacing: 0.062rem;
-    margin-bottom: 1.875rem;
-    border: 1px solid #ccc;
-    background: transparent;
-    border-radius: 4px;
-    cursor: pointer;
-    outline-color: #daa59d4c;
+  position: absolute;
+  top: 0;
+  font-size: 1rem;
+  color: grey;
+  transition: 0.3s;
+  width: 40%;
+  padding: 0.625rem 10px;
+  font-size: 1rem;
+  letter-spacing: 0.062rem;
+  margin-bottom: 1.875rem;
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  outline-color: #daa59d4c;
 }
 
 .paisInput:focus {
-    border: 2px solid #daa59d4c;
+  border: 2px solid #daa59d4c;
 }
 
-.paisInput:focus ~ label,
-.paisInput:valid ~ label,
-.paisInput:not([value=""]) ~ label {
-    top: -1.125rem;
-    left: 10px;
-    color: #daa59d4c;
-    font-size: 0.75rem;
-    background-color: white;
-    height: 10px;
-    padding-left: 5px;
-    padding-right: 5px;
+.paisInput:focus~label,
+.paisInput:valid~label,
+.paisInput:not([value=""])~label {
+  top: -1.125rem;
+  left: 10px;
+  color: #daa59d4c;
+  font-size: 0.75rem;
+  background-color: white;
+  height: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .radioLabel {
-    margin-top: 40px;
-    display: inline-block;
-    margin-right: 10px;
-    color: grey;
-    transition: 0.3s;
+  margin-top: 40px;
+  display: inline-block;
+  margin-right: 10px;
+  color: grey;
+  transition: 0.3s;
 }
 
-#hom, #mul, #out {
-    margin: 5px;
-    font-size: 1rem;
-    display: inline-block;
-    margin-right: 10px;
-    transition: 0.3s;
+#hom,
+#mul,
+#out {
+  margin: 5px;
+  font-size: 1rem;
+  display: inline-block;
+  margin-right: 10px;
+  transition: 0.3s;
 }
 
-
+.mensagem-erro {
+  color: red;
+  font-size: 0.75em;
+  display: block;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding-bottom: 5px;
+}
