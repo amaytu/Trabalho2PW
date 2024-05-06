@@ -40,23 +40,30 @@
     <!-- Conteudo-->
     
     <div class="container">
-    <h1 id="mercado">Mercado</h1>
-        <input type="text" id="taskInputMercado" placeholder="Add new task">
-        <button onclick="addTask('m')">Adicionar</button>
+        <h1 id="mercado">Mercado</h1>
+        <div class="input-group">
+            <input type="text" id="taskInputMercado" placeholder="Add new task">
+            <button onclick="addTask('m')">Adicionar</button>
+        </div>
         <ul id="taskListMercado">
         </ul>
     </div>
     <div class="container">
         <h1 id="faculdade">Faculdade</h1>
-        <input type="text" id="taskInputFaculdade" placeholder="Add new task">
-        <button onclick="addTask('f')">Adicionar</button>
+        <div class="input-group">
+            <input type="text" id="taskInputFaculdade" placeholder="Add new task">
+            <button onclick="addTask('f')">Adicionar</button>
+        </div>
         <ul id="taskListFaculdade">
         </ul>
     </div>
+    
     <div class="container">
         <h1 id="geral">Geral</h1>
-        <input type="text" id="taskInputGeral" placeholder="Add new task">
-        <button onclick="addTask('g')">Adicionar</button>
+        <div class="input-group">
+            <input type="text" id="taskInputGeral" placeholder="Add new task">
+            <button onclick="addTask('g')">Adicionar</button>
+        </div>
         <ul id="taskListGeral">
         </ul>
     </div>
@@ -73,27 +80,36 @@
     <footer>
         <div class="boxs">
             <h2>Universidade</h2>
-            <ui>
+            <ul> 
                 <li><a href="#">FURB</a></li>
-            </ui>
+            </ul> 
         </div>
 
         <div class="boxs">
             <h2>Disciplina</h2>
-            <ui>
+            <ul>
                 <li><a href="#">Programação Web</a></li>
                 <li><a href="#">Ciências da computação</a></li>
                 <li><a href="#">Terceiro Semestre</a></li>
-            </ui>
+            </ul> 
         </div>
+
         <div class="boxs">
             <h2>Alunos</h2>
-            <ui>
+            <ul> 
                 <li><a href="#">Gabriel Utyama</a></li>
                 <li><a href="#">Julia Welter</a></li>
-            </ui>
+            </ul> 
+        </div>
 
-            </div>
-        </footer>
+        <div class="boxs2">
+            <h2>To Do List</h2>
+            <ul> 
+                <li> 
+                    At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+                </li>
+            </ul> 
+        </div>
+    </footer>
     </body>
 </html>
