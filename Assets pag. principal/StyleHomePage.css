@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -30,7 +32,7 @@ li button {
 }
 
 nav {
-  background-color: #daa59d4c;
+  background-color: #dfe7fd;
   box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
   justify-content: space-between;
   display: flex;
@@ -61,7 +63,7 @@ nav a {
 }
 
 nav a:hover {
-  background-color: #d2928969;
+  background-color: #cddafd;
   border-radius: 25px; 
 }
 
@@ -169,15 +171,17 @@ input[type="text"] {
 
 button {
   padding: 10px 20px;
-  background-color: #daa59d;
-  color: #fff;
+  background-color: #cddafd;
+  color: #000000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+ 
+  font-family: Arial, sans-serif;
 }
 
 button:hover {
-  background-color: #c1908d;
+  background-color: #b6caff;
 }
 
 #tasklist ul {
