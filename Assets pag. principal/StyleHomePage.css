@@ -141,6 +141,8 @@ aside p {
   align-items: center;
 }
 
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -162,7 +164,7 @@ h1 {
 }
 
 input[type="text"] {
-  width: calc(100% - 80px);
+  width: calc(100% - 90px); /* Reduzindo a largura para deixar espaço para o botão */
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 5px;
@@ -170,14 +172,14 @@ input[type="text"] {
 }
 
 button {
-  padding: 10px 20px;
+  padding: 12px 24px;
   background-color: #cddafd;
   color: #000000;
   border: none;
   border-radius: 5px;
   cursor: pointer;
- 
   font-family: Arial, sans-serif;
+  margin-left: 10px; /* Adicionando margem à esquerda para separar o botão do input */
 }
 
 button:hover {
@@ -207,58 +209,101 @@ button:hover {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.input-group {
+  display: flex;
+  align-items: center;
+}
+
+.input-group input[type="text"] {
+  width: calc(100% - 120px); /* Reduzindo a largura para deixar espaço para o botão */
+  margin-right: 10px; /* Adicionando margem entre o input e o botão */
+}
+
+.input-group button {
+  flex-shrink: 0; /* Impede que o botão diminua */
+}
+
 /* Conteudo */
 
 /* Footer */
 footer {
   width: 100%;
   min-height: 250px;
-  background: #daa59d4c; /* Alteração da cor de fundo */
+  background: #daa59d4c; 
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: flex-start; /* Alinhar à esquerda */
   align-items: center;
 }
 
 footer .boxs {
-  width: calc(33.33% - 40px);
+  width: calc(25% - 20px); /* Reduzindo a largura e a margem entre as caixas */
   min-height: 150px;
   padding: 20px;
   box-sizing: border-box;
+  text-align: left; 
+  margin-left: auto;
+}
+
+.boxs h2,
+.boxs ul li a,
+.boxs p {
+  color: #000000;
+  font-size: 14px; /* Tamanho do texto reduzido */
 }
 
 .boxs h2 {
-  color: #000000;
-  margin-bottom: 20px;
+  margin-bottom: 10px; /* Reduzindo o espaçamento inferior */
+  font-size: 18px; /* Tamanho do texto reduzido */
 }
 
 .boxs ul li {
-  margin: 10px 0;
+  margin: 5px 0; /* Reduzindo o espaçamento entre itens da lista */
   list-style: none;
 }
 
-.boxs ul li a {
-  color: #daa59d4c;
-  text-decoration: none;
+/* Adicionando estilos para .boxs2 */
+footer .boxs2 {
+  width: calc(92% - 20px); /* Reduzindo a largura e a margem entre as caixas */
+  min-height: 150px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: left; /* Alinhando à esquerda */
+  margin-left: auto;
 }
 
-.boxs p {
-  color: #daa59d4c;
-  text-align: justify;
+.boxs2 h2,
+.boxs2 ul li a,
+.boxs2 p {
+  color: #000000;
+  font-size: 14px; /* Tamanho do texto reduzido */
+}
+
+.boxs2 h2 {
+  margin-bottom: 10px; /* Reduzindo o espaçamento inferior */
+  font-size: 18px; /* Tamanho do texto reduzido */
+}
+
+.boxs2 ul li {
+  margin: 5px 0; /* Reduzindo o espaçamento entre itens da lista */
+  list-style: none;
 }
 
 @media (max-width: 950px) {
   footer {
-      flex-direction: column;
-      align-items: center;
+      justify-content: center;
   }
 
-  footer .boxs {
-      width: calc(100% - 40px);
+  footer .boxs,
+  footer .boxs2 {
+      width: calc(100% - 20px); /* Reduzindo a largura e a margem entre as caixas */
       margin-bottom: 20px;
+      text-align: center; /* Centralizando o texto */
   }
 
   footer .boxs:nth-child(4) {
       width: 100%;
   }
 }
+

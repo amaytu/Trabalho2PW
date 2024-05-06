@@ -107,7 +107,6 @@ function salvarTasks(identificador) {
 
     for (var i = 0; i < taskItems.length; i++) {
         var task = taskItems[i];
-        // Filtra os elementos filhos do li para pegar somente o texto da tarefa
         var taskText = Array.from(task.childNodes)
             .filter(node => node.nodeType === Node.TEXT_NODE)
             .map(node => node.textContent.trim())
@@ -196,12 +195,6 @@ function limparTasks(identificador) {
     while (taskList.firstChild) {
         taskList.removeChild(taskList.firstChild);
     }
-}
-
-function limparTodasTasks() {
-    limparTasks('g');
-    limparTasks('f');
-    limparTasks('m');
 }
 
 function uuidv4() {
