@@ -98,7 +98,7 @@ body {
 
 .box .inputBox input:focus {
   outline: none;
-  border: 2px solid #daa59d4c;
+  border: 2px solid #D29289;
   margin-bottom: 0px;
   padding-bottom: 10px;
 }
@@ -107,7 +107,7 @@ body {
   border: none;
   outline: none;
   color: #fff;
-  background-color: #daa59d4c;
+  background-color: #D29289;
   padding: 0.625rem 1.25rem;
   cursor: pointer;
   border-radius: 0.312rem;
@@ -116,8 +116,8 @@ body {
 }
 
 .box input[type="submit"]:hover {
-  background-color: #daa59d4c;
-  box-shadow: 0 1px 1px 0 #daa59d4c, 0 1px 3px 1px #daa59d4c;
+  background-color: #D29289;
+  box-shadow: 0 1px 1px 0 #C7766B, 0 1px 3px 1px #C7766B;
 }
 
 
@@ -126,7 +126,7 @@ body {
 .box .inputBox input:not([value=""])~label {
   top: -1.125rem;
   left: 10px;
-  color: #daa59d4c;
+  color: #D29289;
   font-size: 0.75rem;
   background-color: white;
   height: 10px;
@@ -138,7 +138,7 @@ body {
 
 .box .inputBox input:focus {
   outline: none;
-  border: 2px solid #daa59d4c;
+  border: 2px solid #D29289;
 }
 
 .forgot {
@@ -177,11 +177,11 @@ body {
   background: transparent;
   border-radius: 4px;
   cursor: pointer;
-  outline-color: #daa59d4c;
+  outline-color: #D29289;
 }
 
 .paisInput:focus {
-  border: 2px solid #daa59d4c;
+  border: 2px solid #D29289;
 }
 
 .paisInput:focus~label,
@@ -189,7 +189,7 @@ body {
 .paisInput:not([value=""])~label {
   top: -1.125rem;
   left: 10px;
-  color: #daa59d4c;
+  color: #D29289;
   font-size: 0.75rem;
   background-color: white;
   height: 10px;
@@ -198,7 +198,7 @@ body {
 }
 
 .radioLabel {
-  margin-top: 40px;
+  margin-top: 20px;
   display: inline-block;
   margin-right: 10px;
   color: grey;
