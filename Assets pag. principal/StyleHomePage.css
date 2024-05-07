@@ -21,7 +21,7 @@ header {
 
 li button {
   padding: 11px 20px;
-  background-color: #daa59d;
+  background-color: #a0baff;
   color: white;
   border: none;
   border-radius: 25px; 
@@ -73,7 +73,7 @@ nav a:hover {
   left: 0;
   height: 100vh;
   width: 250px;
-  background-color: #daa59d4c;
+  background-color: #dfe7fd;
   list-style: none;
   display: none;
   flex-direction: column;
@@ -230,7 +230,7 @@ button:hover {
 footer {
   width: 100%;
   min-height: 250px;
-  background: #daa59d4c; 
+  background: #f0f4ff; 
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start; /* Alinhar à esquerda */
